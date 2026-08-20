@@ -338,14 +338,14 @@ blockquote > div > div > cite {
   display: none;
 }
 
-.grid-content {
+.grid-main-content {
   background-color: var(--page-bg-color);
   grid-area: content;
   margin-block-start: 0;
   padding-inline: 1rem;
 }
 
-.grid-content h2 {
+.grid-main-content h2 {
   /* margin-block-start: 0.75rem; */
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
@@ -502,7 +502,7 @@ blockquote > div > div > cite {
     font-size: 1rem;
   }
 
-  .grid-content {
+  .grid-main-content {
     background-color: var(--page-bg-color);
     padding: 1rem;
     grid-area: content;
@@ -511,7 +511,7 @@ blockquote > div > div > cite {
     padding-inline: 1rem;
   }
 
-  .grid-content h2 {
+  .grid-main-content h2 {
     margin-block-start: 0;
   }
 
