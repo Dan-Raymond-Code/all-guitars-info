@@ -1308,6 +1308,16 @@ p.intro-guitar-shows {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.global-guitar-makers > figure > figcaption .name > a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .global-guitar-makers > figure > figcaption .owner {
   display: none;
   font-size: 0.9rem;
