@@ -1253,6 +1253,22 @@ figure.authority-graphic-small {
   @media (min-width: 768px) {
     max-width: 80%;
   }
+
+  @media (min-width: 1200px) {
+    max-width: 65%;
+  }
+
+  @media (min-width: 1450px) {
+    max-width: 60%;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 55%;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 50%;
+  }
 }
 
 span.emoji-large {
@@ -1326,6 +1342,10 @@ p.intro-guitar-shows {
   grid-template-rows: auto 1fr;
   padding: 0;
   margin: 0;
+  padding-block-end: 0.3rem;
+  background-color: #efefef;
+  border: 2px solid #cccccc;
+  border-radius: 7px;
 }
 
 .global-guitar-makers > figure > figcaption {
@@ -1373,6 +1393,8 @@ p.intro-guitar-shows {
   border: 1px solid var(--pitch-section-border-color);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   animation: fadeIn 1.5s;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 hgroup.group-guitar-makers {
