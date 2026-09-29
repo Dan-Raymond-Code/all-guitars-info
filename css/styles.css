@@ -1367,8 +1367,9 @@ p.intro-guitar-shows {
 }
 
 .global-guitar-makers > figure > figcaption .name > a {
-  color: inherit;
   font: inherit;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 
   &:hover {
