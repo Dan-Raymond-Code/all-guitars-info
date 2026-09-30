@@ -1421,6 +1421,7 @@ h1.head-guitar-makers {
 p.intro-guitar-makers {
   margin-block-start: 0;
   font-family: inherit;
+  margin-block-end: 0;
 }
 
 p.clearit {
@@ -1431,4 +1432,11 @@ p.clearit {
 
 .d-none {
   display: none !important;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-block-start: 0.25rem;
+  padding-inline: 0.5rem;
 }
