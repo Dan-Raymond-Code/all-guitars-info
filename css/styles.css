@@ -410,7 +410,11 @@ blockquote > div > div > cite {
 
 .pitch-section > .pitch-section-heading {
   overflow: hidden;
-  padding: 0.5rem 0.25rem;
+  padding: 0.2rem 0.25rem 0.5rem;
+
+  @media (min-width: 800px) {
+    padding: 0 0.25rem 0.5rem;
+  }
 }
 
 .pitch-section .pitch-section-heading > .pitch-section-heading__img {
@@ -853,8 +857,7 @@ dialog[open]::backdrop {
 }
 
 .faq-wrapper,
-.mobile-guitar-show-list-wrapper,
-.mobile-categories-list-wrapper {
+.mobile-guitar-show-list-wrapper {
   width: 100%;
   margin: 0 auto;
 
