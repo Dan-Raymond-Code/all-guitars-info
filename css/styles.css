@@ -1428,6 +1428,7 @@ p.intro-guitar-shows {
   animation: fadeIn 1.5s;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  aspect-ratio: 0.82;
 }
 
 hgroup.group-guitar-makers {
