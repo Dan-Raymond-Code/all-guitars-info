@@ -1292,13 +1292,23 @@ span.emoji-large {
   padding-inline-start: 1.3rem;
 }
 
-.mobile-categories-list {
+/* .mobile-categories-list {
   width: 100%;
   text-align: left;
   columns: 2;
   font-family: "Roboto Condensed", sans-serif;
   padding-inline: 1em;
   padding-block-end: 1rem;
+} */
+
+.mobile-categories-list {
+  width: 100%;
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-inline: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
 }
 
 .mobile-categories-list .category-header:first-of-type {
