@@ -1392,6 +1392,7 @@ p.intro-guitar-shows {
   background-color: var(--color-gray-100);
   border: 2px solid var(--pitch-section-border-color);
   border-radius: 7px;
+  animation: fadeIn 1.5s;
 }
 
 .global-guitar-makers > figure > figcaption {
@@ -1439,10 +1440,10 @@ p.intro-guitar-shows {
   max-width: 100%;
   border: 1px solid var(--pitch-section-border-color);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 1.5s;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   aspect-ratio: 0.82 auto;
+  animation: fadeIn 1.5s;
 }
 
 hgroup.group-guitar-makers {
