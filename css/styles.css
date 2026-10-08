@@ -227,7 +227,7 @@ header a {
   text-decoration: none;
   color: var(--category-header-color);
   display: block;
-  margin-block-start: 0.5rem;
+  /* margin-block-start: 0.5rem; */
   text-decoration: underline dotted;
   text-underline-offset: 4px;
 }
@@ -1297,7 +1297,8 @@ span.emoji-large {
   text-align: left;
   columns: 2;
   font-family: "Roboto Condensed", sans-serif;
-  padding-inline: 0.5em;
+  padding-inline: 1em;
+  padding-block-end: 1rem;
 }
 
 .mobile-categories-list .category-header:first-of-type {
@@ -1428,7 +1429,7 @@ p.intro-guitar-shows {
   animation: fadeIn 1.5s;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  aspect-ratio: 0.82;
+  aspect-ratio: 0.82 auto;
 }
 
 hgroup.group-guitar-makers {
