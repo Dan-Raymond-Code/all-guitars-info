@@ -424,6 +424,7 @@ blockquote > div > div > cite {
   border: 2px solid var(--pitch-section-border-color);
   max-width: 70px;
   max-height: 70px;
+  aspect-ratio: 1 auto;
 
   @media (min-width: 800px) {
     max-width: 80px;
@@ -591,6 +592,7 @@ blockquote > div > div > cite {
 
   .guitar-show-list figure img {
     max-width: 75px;
+    aspect-ratio: 1 auto;
     border-radius: 50%;
     box-shadow: 4px 4px 8px var(--color-black-650);
     animation: fadeIn 1.5s;
@@ -774,6 +776,12 @@ dialog[open]::backdrop {
   &:hover {
     color: rgba(0, 0, 0, 1);
   }
+}
+
+.modal-dialog {
+  max-height: 90dvh;
+  width: 95%;
+  overflow-y: auto;
 }
 
 @media (min-width: 768px) {
