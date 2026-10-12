@@ -88,10 +88,13 @@ window.onscroll = function () {
 };
 
 let scrollTopBtn = document.querySelector("#scrollTopBtn");
+let scrollTopIcon = document.querySelector("i.bi-arrow-up-square");
 
 if (scrollTopBtn) {
   scrollTopBtn.addEventListener("click", topFunction);
   scrollTopBtn.addEventListener("touchstart", topFunction);
+  scrollTopIcon.addEventListener("click", topFunction);
+  scrollTopIcon.addEventListener("touchstart", topFunction);
 }
 
 // document.querySelector("#scrollTopBtn")?.addEventListener("click", topFunction);
