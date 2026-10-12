@@ -89,11 +89,15 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-document.querySelector("#scrollTopBtn")?.addEventListener("click", topFunction);
-
 document
   .querySelector("#scrollTopBtn")
-  ?.addEventListener("touchstart", topFunction);
+  .addEventListener("pointerdown", topFunction);
+
+// document.querySelector("#scrollTopBtn")?.addEventListener("click", topFunction);
+
+// document
+//   .querySelector("#scrollTopBtn")
+//   ?.addEventListener("touchstart", topFunction);
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
