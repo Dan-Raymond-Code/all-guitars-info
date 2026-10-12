@@ -83,15 +83,16 @@ function openModalWindow(whichWindow) {
   }
 }
 
-let scrollTopBtn = document.getElementById("scrollTopBtn");
-
 window.onscroll = function () {
   scrollFunction();
 };
 
-document
-  .querySelector("#scrollTopBtn")
-  .addEventListener("pointerdown", topFunction);
+let scrollTopBtn = document.querySelector("#scrollTopBtn");
+
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", topFunction);
+  scrollTopBtn.addEventListener("touchstart", topFunction);
+}
 
 // document.querySelector("#scrollTopBtn")?.addEventListener("click", topFunction);
 
