@@ -92,9 +92,16 @@ let scrollTopIcon = document.querySelector("i.bi-arrow-up-square");
 
 if (scrollTopBtn) {
   scrollTopBtn.addEventListener("click", topFunction);
-  scrollTopBtn.addEventListener("touchstart", topFunction);
+  scrollTopBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    topFunction();
+  });
+
   scrollTopIcon.addEventListener("click", topFunction);
-  scrollTopIcon.addEventListener("touchstart", topFunction);
+  scrollTopIcon.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    topFunction();
+  });
 }
 
 // document.querySelector("#scrollTopBtn")?.addEventListener("click", topFunction);
