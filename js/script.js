@@ -56,30 +56,43 @@ elementsCloseButton.forEach((element) => {
 });
 
 function openModalWindow(whichWindow) {
+  let theModal = null;
+
   switch (whichWindow) {
     case "guitar-related-brands":
-      document.getElementById("modal-guitar-related-brands").showModal();
+      //document.getElementById("modal-guitar-related-brands").showModal();
+      theModal = document.querySelector("#modal-guitar-related-brands");
       break;
 
     case "virtual-trade-show-benefits":
-      document.getElementById("modal-virtual-trade-show-benefits").showModal();
+      //document.getElementById("modal-virtual-trade-show-benefits").showModal();
+      theModal = document.querySelector("#modal-virtual-trade-show-benefits");
       break;
 
     case "industry-specific-directory":
-      document.getElementById("modal-industry-specific-directory").showModal();
+      //document.getElementById("modal-industry-specific-directory").showModal();
+      theModal = document.querySelector("#modal-industry-specific-directory");
       break;
 
     case "allguitar-categories":
-      document.getElementById("modal-categories").showModal();
+      //document.getElementById("modal-categories").showModal();
+      theModal = document.querySelector("#modal-categories");
       break;
 
     case "major-brands":
-      document.getElementById("modal-major-brands").showModal();
+      //document.getElementById("modal-major-brands").showModal();
+      theModal = document.querySelector("#modal-major-brands");
       break;
 
     default:
-      document.getElementById("modal-guitar-related-brands").showModal();
+      //document.getElementById("modal-guitar-related-brands").showModal();
+      theModal = document.querySelector("#modal-guitar-related-brands");
       break;
+  }
+
+  if (theModal) {
+    theModal.showModal();
+    theModal.scrollTop = 0;
   }
 }
 
