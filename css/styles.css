@@ -15,6 +15,7 @@
   --color-red-500: hsl(355 85.3% 54.5%); /* #ee2838 */
   --color-gray-400: hsl(0 0% 87.8%); /* XXX */
   --color-black-650: rgba(0, 0, 0, 0.2);
+  --color-black-700: rgba(0, 0, 0, 0.9);
 
   --page-bg-color: var(--color-white-200);
   --text-color: var(--color-green-600);
@@ -138,7 +139,7 @@ header a {
 }
 
 .hamburger {
-  display: none;
+  display: block;
   cursor: pointer;
 }
 
