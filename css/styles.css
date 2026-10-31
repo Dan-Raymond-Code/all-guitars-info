@@ -6,6 +6,9 @@
   --color-white-200: hsl(20 23.1% 94.9%); /* XXX #f5f1ef */
   --color-green-600: hsl(101 57.1% 16.5%); /* XXX #214212 */
   --color-black-100: hsl(0 0% 27.5%); /* XXX #464646*/
+  --color-black-200: #1e1e1e; /*hsl(0 0% 11.8%); XXX #1e1e1e */
+  --color-black-300: #222323ea;
+  --color-green-300: #b2ff65; hsl(101 100% 70.5%); /* XXX #b2ff65 */ 
   --color-green-400: hsl(153 56% 54.5%); /* XXX #4acc91 */
   --color-white-400: hsl(210 50% 99.2%); /* XXX #fcfdfe */
   --color-green-100: hsl(154 58.3% 95.3%); /* XXX #ecfaf4; */
@@ -28,6 +31,10 @@
   --pitch-section-border-color: var(--color-gray-200);
   --logo-border: 2px solid var(--color-red-500);
   --body-bg-color: var(--color-gray-400);
+  --dialog-close-hover-bg-color: var(--color-green-400);
+  --details-body-text-color: var(--color-black-200);
+  --details-arrow-icon-color: var(--color-black-300);
+  --scrolltop-button-hover-bg-color: var(--#303030); /*scrolltop-button-hover-bg-color*/
 }
 
 body {
@@ -41,7 +48,7 @@ body {
 
 p {
   color: var(--text-color);
-  line-height: 1.45;
+  line-height: 1.45;--dialog-close-hover-bg-color:
 
   &.faq-subhead {
     margin-top: 1rem !important;
@@ -839,7 +846,7 @@ dialog[open]::backdrop {
 
 .dialog-close-button {
   padding: 0.2em 0.75em 0.2em;
-  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   border-radius: 6px;
   border: 2px solid var(--border-color);
   background-color: var(--panels-bg-color);
@@ -848,7 +855,7 @@ dialog[open]::backdrop {
   cursor: pointer;
 
   &:hover {
-    background-color: #b2ff65;
+    background-color: var(--dialog-close-hover-bg-color);
     color: black;
   }
 }
@@ -912,7 +919,7 @@ details {
   background-color: var(--details-bgcolor);
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 1rem;
-  color: #1e1e1e;
+  color: var(--details-body-text-color);
   line-height: 1.5;
 }
 
@@ -937,7 +944,7 @@ details span.icon::after {
   font-size: 1.3rem;
   content: "\f078";
   font-weight: 700;
-  color: #222323ea;
+  color: var(--details-arrow-icon-color);
   cursor: pointer;
   transition: all 0.35s ease;
 }
@@ -947,7 +954,7 @@ details span.question::before {
   font-size: 1.75rem;
   content: "";
   font-weight: 700;
-  color: #222323ea;
+  color: var(--details-arrow-icon-color);
   cursor: pointer;
   transition: all 0.35s ease;
 }
@@ -1176,7 +1183,7 @@ figcaption {
   border: 2px solid var(--border-color); /* Add a border */
   outline: none; /* Remove outline */
   background-color: var(--border-color);
-  color: #f2f2f2; /* Text color */
+  color: var(--color-white-200); /* #f2f2f2; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 6px 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -1190,7 +1197,7 @@ figcaption {
   }
 
   #scrollTopBtn:hover {
-    background-color: #303030;
+    background-color: var(--scrolltop-button-hover-bg-color); /* #303030; scrolltop-button-hover-bg-color*/
   }
 }
 
@@ -1204,7 +1211,6 @@ figcaption {
   border-radius: 50%;
   padding-top: 5px;
   padding-bottom: 5px;
-  /* border: var(--logo-border); */
 }
 
 @media (min-width: 576px) {
@@ -1216,7 +1222,6 @@ figcaption {
   .logo-main {
     max-width: 80px;
     border-radius: 50%;
-    /* border: var(--logo-border); */
   }
 }
 
