@@ -8,7 +8,7 @@
   --color-black-100: hsl(0 0% 27.5%); /* XXX #464646*/
   --color-black-200: #1e1e1e; /*hsl(0 0% 11.8%); XXX #1e1e1e */
   --color-black-300: #222323ea;
-  --color-green-300: #b2ff65; hsl(101 100% 70.5%); /* XXX #b2ff65 */ 
+  --color-green-300: #b2ff65; /*hsl(101 100% 70.5%); /* XXX #b2ff65 */
   --color-green-400: hsl(153 56% 54.5%); /* XXX #4acc91 */
   --color-white-400: hsl(210 50% 99.2%); /* XXX #fcfdfe */
   --color-green-100: hsl(154 58.3% 95.3%); /* XXX #ecfaf4; */
@@ -34,7 +34,9 @@
   --dialog-close-hover-bg-color: var(--color-green-400);
   --details-body-text-color: var(--color-black-200);
   --details-arrow-icon-color: var(--color-black-300);
-  --scrolltop-button-hover-bg-color: var(--#303030); /*scrolltop-button-hover-bg-color*/
+  --scrolltop-button-hover-bg-color: var(
+    --#303030
+  ); /*scrolltop-button-hover-bg-color*/
 }
 
 body {
@@ -48,12 +50,9 @@ body {
 
 p {
   color: var(--text-color);
-  line-height: 1.45;--dialog-close-hover-bg-color:
-
-  &.faq-subhead {
-    margin-top: 1rem !important;
-    font-weight: 500;
-  }
+  line-height: 1.45;
+  --dialog-close-hover-bg-color: &.faq-subhead {margin-top: 1rem !important;
+    font-weight: 500;};
 }
 
 h1,
@@ -691,15 +690,19 @@ blockquote > div > div > cite {
 }
 
 @media (min-width: 1700px) {
-  .grid-container-expanded {
-    grid-template-columns: 200px auto 200px;
-    width: 65vw;
+  .grid-container {
+    width: 70vw;
   }
 }
 
 @media (min-width: 1900px) {
-  .grid-container-expanded {
-    grid-template-columns: 220px auto 220px;
+  .grid-container {
+    width: 65vw;
+  }
+}
+
+@media (min-width: 2100px) {
+  .grid-container {
     width: 60vw;
   }
 }
@@ -992,6 +995,7 @@ li {
 
 .bullet-list-home {
   margin-block-start: 0.75rem;
+  margin-block-end: 0;
   padding-inline-start: 16px;
 }
 
@@ -1197,7 +1201,9 @@ figcaption {
   }
 
   #scrollTopBtn:hover {
-    background-color: var(--scrolltop-button-hover-bg-color); /* #303030; scrolltop-button-hover-bg-color*/
+    background-color: var(
+      --scrolltop-button-hover-bg-color
+    ); /* #303030; scrolltop-button-hover-bg-color*/
   }
 }
 
