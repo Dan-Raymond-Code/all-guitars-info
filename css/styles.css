@@ -707,6 +707,12 @@ blockquote > div > div > cite {
   }
 }
 
+@media (min-width: 2300px) {
+  .grid-container {
+    width: 55vw;
+  }
+}
+
 .footer-div {
   padding-block: 0.5rem;
 }
