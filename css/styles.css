@@ -8,6 +8,7 @@
   --color-black-100: hsl(0 0% 27.5%); /* XXX #464646*/
   --color-black-200: #1e1e1e; /*hsl(0 0% 11.8%); XXX #1e1e1e */
   --color-black-300: #222323ea;
+  --color-black-400: #303030;
   --color-green-300: #b2ff65; /*hsl(101 100% 70.5%); /* XXX #b2ff65 */
   --color-green-400: hsl(153 56% 54.5%); /* XXX #4acc91 */
   --color-white-400: hsl(210 50% 99.2%); /* XXX #fcfdfe */
@@ -34,9 +35,8 @@
   --dialog-close-hover-bg-color: var(--color-green-400);
   --details-body-text-color: var(--color-black-200);
   --details-arrow-icon-color: var(--color-black-300);
-  --scrolltop-button-hover-bg-color: var(
-    --#303030
-  ); /*scrolltop-button-hover-bg-color*/
+  --scrolltop-button-hover-bg-color: var(--color-black-400);
+  /*scrolltop-button-hover-bg-color*/
 }
 
 body {
